@@ -12,7 +12,7 @@ Comandos válidos:
 -------------
 • **fd** value <br/>
 • **bk** value <br/>
-•** rt** value <br/>
+• **rt** value <br/>
 • **lt** value <br/>
 • **setpos** [ X Y ] <br/>
 • **setxy** [ X Y ] <br/>
@@ -22,16 +22,16 @@ Comandos válidos:
 • **pu** <br/>
 • **setpencolor** [ R G B ] <br/>
 • **make** :var value <br/>
-•** while** [ value operator value ] [ program ] <br/>
+• **while** [ value operator value ] [ program ] <br/>
 • **repeat** value [ program ] <br/>
-•** if **comparation [ program ] <br/>
-• ** ifelse ** comparation [ program ] [ program ] <br/>
-• ** to func_name ** :param program end <br/>
-• ** func_name ** :param <br/>
+• **if** comparation [ program ] <br/>
+• **ifelse** comparation [ program ] [ program ] <br/>
+• **to func_name** :param program end <br/>
+• **func_name** :param <br/>
 
-** Value: ** pode ser float, uma variável ou uma operação. <br/>
-** Operator: ** <, > ou = <br/>
-** Comparation: ** comparação entre dois values. <br/>
+**Value:** pode ser float, uma variável ou uma operação. <br/>
+**Operator:** <, > ou = <br/>
+**Comparation:** comparação entre dois values. <br/>
 
 ### Exemplos de programas
      to tree :size
