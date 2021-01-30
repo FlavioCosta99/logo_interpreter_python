@@ -1,0 +1,58 @@
+
+#Função make com while
+make "i 10
+make "l 2
+while [ :i > 0 ] [ fd :l rt 90 make "i :i - 1 make "l 1.75 * :l ]
+
+
+### Função to com repeat
+setpencolor [ 255 0 0 ]
+to HOUSE rt 90 repeat 4 [ fd 50 rt 90 ] lt 60 fd 50 rt 120 fd 50 lt 150 end
+to HOUSEROW repeat 5 [ HOUSE rt 90 pu fd 50 lt 90 pd ] end
+HOUSEROW
+
+
+#Função "to" a passar parâmetros
+to LEAF :angle repeat 2 [ repeat :angle [ fd 2 rt 1 ] rt 180 - :angle ] end
+repeat 20 [ LEAF 100 rt 20 ]
+
+
+#ifelse
+ifelse 3 = 3 and 4 < 2 [ fd 20 ] [ fd 150 ]
+
+Corre a 2ª opção, já que a condição dá false
+
+
+ifelse 3 = 3 or 4 < 2 [ fd 20 ] [ fd 150 ]
+
+Corre a 2ª opção, já que a condição dá true
+
+
+
+to tree :size
+   ifelse :size < 5 [forward :size back :size]
+   [
+   forward :size/3
+   left 30 tree :size*2/3 right 30
+   forward :size/6
+   right 25 tree :size/2 left 25
+   forward :size/3
+   right 25 tree :size/2 left 25
+   forward :size/6
+   back :size
+   ]
+end
+tree 150
+
+
+to fern :size :sign
+  if :size > 1 [
+  fd :size
+  rt 70 * :sign fern :size * 0.5 :sign * -1 lt 70 * :sign
+  fd :size
+  lt 70 * :sign fern :size * 0.5 :sign rt 70 * :sign
+  rt 7 * :sign fern :size - 1 :sign lt 7 * :sign
+  bk :size * 2  ]
+end
+pu bk 150 pd
+fern 25 1

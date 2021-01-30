@@ -1,0 +1,4 @@
+setpencolor [ 255 0 0 ]
+to HOUSE rt 90 repeat 4 [ fd 50 rt 90 ] lt 60 fd 50 rt 120 fd 50 lt 150 end
+to HOUSEROW repeat 5 [ HOUSE rt 90 pu fd 50 lt 90 pd ] end
+HOUSEROW
