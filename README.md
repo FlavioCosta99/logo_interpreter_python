@@ -1,5 +1,6 @@
-#LOGO interpreter
-
+<h1> LOGO interpreter </h1>
+<p> Program that reads a file and returns an SVG.
+Program based on https://www.calormen.com/jslogo/</p>
 
 
 How to use
