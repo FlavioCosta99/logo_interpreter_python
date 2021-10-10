@@ -1,14 +1,15 @@
-# Linguagem de programação LOGO interpretador
+#LOGO interpreter
 
 
 
-Como utilizar
+How to use
 =============
-Colocar os comandos no ficheiro input.txt, de seguida correr o main.py
+Put the commands in the file input.txt, then run main.py
 
 
 
-Comandos válidos:
+
+Valid commands:
 -------------
 • **fd** value <br/>
 • **bk** value <br/>
@@ -29,11 +30,11 @@ Comandos válidos:
 • **to func_name** :param program end <br/>
 • **func_name** :param <br/>
 
-**Value:** pode ser float, uma variável ou uma operação. <br/>
-**Operator:** <, > ou = <br/>
-**Comparation:** comparação entre dois values. <br/>
+**Value:** can be a float, a variable or an operation <br/>
+**Operator:** <, > or = <br/>
+**Comparation:** comparison between two values. <br/>
 
-### Exemplos de programas
+### Example of programs
      to tree :size
 		 ifelse :size < 5 [forward :size back :size]
 			 [
